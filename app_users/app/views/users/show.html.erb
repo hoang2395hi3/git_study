@@ -1,8 +1,0 @@
-<div class="container">
-	<h1>Tên người dùng: <%= @user.name %></h1>
-	Email: <%= @user.email %> <br>
-	Giới tính: <%= @user.gender == 0 ? "Nam" : "Nữ" %> <br> <br>
-
-	<%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_user_path(@user), :class => "btn btn-primary" %>
-	<%= link_to '<i class="fa fa-trash"></i>'.html_safe, @user, :class => "btn btn-danger", :method => :delete, :data => { :confirm => "Bạn chắc chắn chứ?" } %>
-</div>
